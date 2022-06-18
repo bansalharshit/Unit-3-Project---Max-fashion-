@@ -1,0 +1,60 @@
+*{
+    font-family:ProximaNova-Semibold,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji" ;
+    
+}
+body{
+    background-image: url("/images/project-bac-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+    
+}
+#login-signup-form{
+
+
+    padding: 10px 50px 50px 50px;
+    width: 35%;
+    margin: auto;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-top: 10%;
+    background-color: white;
+    
+}
+button{
+    color:white; 
+    background-color: rgb(48, 58, 178);
+    padding: 15px 35px 15px 35px;
+    border: none;
+ }
+ button:hover{
+     cursor: pointer;
+     background-color:rgb(22, 35, 176) ;
+     
+ }
+#mobile-detail{
+    border: 1.5px solid rgb(48, 58, 178);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 30px;
+
+}
+input{
+    outline: none;
+    height: 26px;
+    width: 125%;
+    border: none;
+}
+#first-sub-para{
+    font-size: 14px;
+    color: rgb(146, 147, 145);
+}
+#last-sub-para{
+    font-size: 14px;
+}
+p{
+    font-size: 36px;
+    font-weight: normal;
+}
