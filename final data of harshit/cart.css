@@ -3,23 +3,28 @@
 }
 h2{
     margin-top: 50px;
+    margin-left: 45px;
+    margin-bottom: 10px;
 }
 #main{
+    margin-top: 10px;
+    /* border: 1px solid red; */
     display: flex;
-    /* border: 1px solid rgb(230, 226, 226); */
-    height: 500px;
+    height: 1000px;
     justify-content: space-around;
     
 }
 #main>div{
-    /* border: 1px solid rgb(230, 226, 226); */
+    height: 800px;
+    /* border: 1px solid red; */
     margin-right: 30px;
     padding: 10px;
 }
 #check>div{
     width: 90%;
     height: 120px;
-    border: 1px solid rgb(230, 226, 226);
+    border: 1px solid rgb(201, 197, 197);
+    /* border: 1px solid red; */
     margin-bottom: 10px;
     padding: 10px;
 
@@ -31,6 +36,33 @@ h2{
     height: 250px;
     margin-left: 20px;
     margin-right: 20px;
+}
+#box>#imgcont{
+    width: 95%;
+    border: 1px solid rgb(201, 197, 197);
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    height: 150px;
+}
+
+#divimg{
+    /* border: 1px solid blue; */
+    width: 20%;
+    height:100%;
+    margin-right: 10px;
+}
+#divimg img{
+    width: 100%;
+    height: 100%;
+}
+#divcont{
+    padding: 10px;
+    font-weight: bold;
+    /* border: 1px solid yellowgreen; */
+    width: 50%;
+    height:80%;
+    margin-top: 10px;
 }
 #check{
     width: 40%;
@@ -90,19 +122,27 @@ height: 90px;
 
 }
 #check>#box3{
-height: 280px;
+height: 230px;
 
 }
+#check>#box4{
+    height: 150px;
+}
 #dba3{
+    /* border: 1px solid red; */
+    padding: 2px;
 display: flex;
+margin-bottom: 10px;
 
 }
 #box3>div:nth-child(2){
 display: flex;
-margin-top: -30px;
+margin-bottom: 10px;
+
 }
 #last{
 display: flex;
+margin-top: 20px;
 }
 h4{
 margin-left: 220px;
@@ -120,12 +160,16 @@ height: 40px;
 padding: 10px;
 background-color: rgb(47, 47, 167);
 border: none;
+margin-top: 10px;
+
+
 
 }
-a{
+#btn a{
 text-decoration: none;
 color: white;
 font-size: 15px;
+
 }
 #btn+div{
 margin-top: 10px;
@@ -134,13 +178,15 @@ padding: 4px;
 
 }
 #productadd{
-margin-left: 20px;
+margin-left: 40px;
 font-weight: bold;
 }
 .re{
 border: none;
 color: blue;
 cursor: pointer;
+margin-left: 280px;
+margin-top: 10px;
 }
 #box4{
 border: 1px solid red;
@@ -157,8 +203,19 @@ color: blue;
 }
 #login a{
     color:blue;
+    text-decoration: none;
+    font-weight: bolder;
+
+    padding: 5px 10px 5px 10px;
 }
 #learn a{
     color: blue;
+    
 
+}
+#learn{
+    margin-top: 10px;
+}
+#login+p{
+    margin-top: 10px;
 }

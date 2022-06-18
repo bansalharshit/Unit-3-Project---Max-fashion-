@@ -13,7 +13,13 @@ document.querySelector("#total").innerText = ` Rs ${total}`;
 
 cartdata.map(function (elem,index) {
 var box = document.createElement("div");
+box.setAttribute("id","imgcont")
 
+var divimg=document.createElement("div");
+divimg.setAttribute("id","divimg")
+var divcont=document.createElement("div");
+divcont.id="divcont"
+box.append(divimg,divcont)
 var img = document.createElement("img");
 img.src = elem.url;
 img.setAttribute("class","product")
@@ -38,7 +44,9 @@ btn.setAttribute("class","re")
 btn.addEventListener("click",function(){
 removeitem(elem,index)  
  })
-box.append(img, price,des,size,type,btn);
+divcont.append(price,des,size,type,btn);
+divimg.append(img)
+
 
 document.querySelector("#box").append(box);
 });
