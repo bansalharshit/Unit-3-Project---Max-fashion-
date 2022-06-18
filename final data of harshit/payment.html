@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/b1aa49fc63.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="payment.css">
+    <title>Payment</title>
+</head>
+<body>
+    <div id="navbar">
+        <div id="logodiv">
+            <img id="logo" src="https://i1.lmsin.net/website_images/in/logos/header/logo-max.svg" alt="logo">
+        </div>
+        <div id="navright">
+            <div id="navright_flex">
+                <i id="navright_i" class="fa-solid fa-square-phone"></i>
+                <p>Call 1800-123-1444</p>
+            </div>
+            <p>Monday - Saturday, 09:00AM - 07:00PM</p>
+        </div>
+    </div>
+    <div id="mid">
+        <div id="left">
+           
+            <div id="ship_method">
+                <h2>Select a shipping method</h2>
+                <div id="s_method">
+                    <div class="s_methoddiv" id="s_methoddiv1" onclick="homedel(event)">
+                        <h4>Home Delivery</h4>
+                        <p>Get your product delivered to your home.</p>
+                    </div>
+                    <div class="s_methoddiv" id="s_methoddiv2" onclick="collect(event)">
+                        <h4>Click & Collect</h4>
+                        <p>Collect your order from a store of your choice.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="store">
+                <h3>Select your collection store</h3>
+                <p>Search or use our map view to find your nearest store</p>
+                <select onchange="store()" name="" id="location">
+                    <option value="kochi">Kochi</option>
+                    <option value="bangalore">Bangalore</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="mumbai">Mumbai</option>
+                </select>
+                <div id="selectedstore">
+                    <p>store selected</p>
+                    <h3 id="cityselected"></h3>
+                </div>
+                <div id="mapdiv">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="600" height="500" id="gmap_canvas" src="" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contactdetails">
+                    <h3>Add your Contact details</h3>
+                    <h5>Full Name</h5>
+                    <input type="text" placeholder="Enter your Full Name" >
+                    <h5>Mobile Number</h5>
+                    <div class="mob_flex">
+                        <div class="mob_box">
+                            <h5>+91</h5>
+                        </div>
+                        <input id="mob" inputmode="numeric" placeholder="Enter your Mobile Number" required>
+                    </div>
+                    
+                
+            </div>
+            <div id="ship_address">
+                <h3>Add your shipping address</h3>
+                <form onsubmit="paying(event)">
+                    <h5>Full Name</h5>
+                    <input type="text" placeholder="Enter your Full Name" required>
+                    <h5>Mobile Number</h5>
+                    <div class="mob_flex">
+                        <div class="mob_box">
+                            <h5>+91</h5>
+                        </div>
+                        <input id="mobnumber" inputmode="numeric" placeholder="Enter your Mobile Number" maxlength="10" minlength="10" required>
+                    </div>
+                    <h5>Pincode</h5>
+                    <input inputmode="numeric" placeholder="Enter your Pincode" maxlength="6" minlength="6" required>
+                    <h5>City</h5>
+                    <input type="text" placeholder="Select your City or Town" required>
+                    <h5>State</h5>
+                    <input type="text" placeholder="Select your State" required>
+                    <h5>Building name or number</h5>
+                    <input type="text" placeholder="Enter Building Name" required>
+                    <h5>Street name or number</h5>
+                    <input type="text" placeholder="Flat/House number, Floor, Building" required>
+                    <div class="landmarkdiv">
+                        <h5>Landmark </h5>
+                        <p> (Optional)</p>
+                    </div>
+                    <input type="text" placeholder="Landmark" required>
+                    <h5>Address Type</h5>
+                    <div class="addressdiv">
+                       <div class="address_flex">
+                        <input type="radio" name="add_type" required checked>
+                        <h6>Home</h6>
+                       </div>
+                       <div class="address_flex">
+                        <input type="radio" name="add_type" required>
+                        <h6>Office</h6>
+                       </div>
+                       
+                    </div>
+                
+            </div>
+            <hr>
+            <div id="pay_method">
+                <h2>Select a payment method</h2>
+                <div>
+                    <div class="payment_type">
+                        <input onchange="paytype(event)" type="radio" name="paymenttype" value="1" id="card" checked>
+                        <i class="fa-solid fa-credit-card"></i>
+                        <h4>Credit/Debit Card</h4>
+                    </div>
+                  <div id="cardselected">
+                    <div id="cardtype">
+                        <div class="card_type">
+                            <input type="radio" name="card_type" id="" checked>
+                            <h5>Debit Card</h5>
+                        </div>
+                        <div class="card_type">
+                            <input type="radio" name="card_type" id="">
+                            <h5>Credit Card</h5>
+                        </div>
+                    </div>
+                    <div id="carddetails">
+                            <h5>Card Number</h5>
+                            <input type="text" name="" id="" placeholder="Enter your 16 digit card number">
+                            <h5>Name on Card</h5>
+                            <input type="text" placeholder="Name on card">
+                            <div id="expirydiv">
+                                <h5>Expiry Date</h5>
+                                <div id="cvvdiv">
+                                    <h5>CVV</h5>
+                                    <i class="fa-solid fa-question"></i>
+                                </div>
+                            </div>
+                            <input id="expiry" type="month" min="2022-06" max="2041-06" placeholder="MM-YYYY" required>
+                            <input id="cvv" inputmode="numeric" minlength="3" maxlength="3" placeholder="CVV" required>
+                            <div class="checkdiv">
+                                <input type="checkbox" value="11" checked>
+                                <h5>Save this card for future transactions</h5>
+                            </div>
+                            <h5 id="checkh5">Billing Address</h5>
+                            <div class="checkdiv" id="checkdiv2">
+                                <input onchange="billind_add(event)" id="billing" type="checkbox" value="22" checked>
+                                <h5>Is billing address the same as shipping address?</h5>
+                            </div>
+                            <div id="form">
+                                <h5>Full Name</h5>
+                                <input type="text" placeholder="Enter your Full Name">
+                                <h5>City</h5>
+                                <input type="text" placeholder="Select your City or Town">
+                                <h5>State</h5>
+                                <input type="text" placeholder="Select your State">
+                                <h5>Building name or number</h5>
+                                <input type="text" placeholder="Enter Building Name">
+                                <h5>Street name or number</h5>
+                                <input type="text" placeholder="Flat/House number, Floor, Building">
+                            </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="payment_type" id="coddiv">
+                    <input onchange="paytype(event)" type="radio" name="paymenttype" value="2" id="cod">
+                    <i class="fa-solid fa-money-bills"></i>
+                    <h4>Cash On Delivery</h4>
+                </div>
+                <hr id="codhr">
+                
+            </div>
+            <div id="buttondiv">
+                <p>By clicking on Proceed to Payment, you agree to our Terms and Conditions</p>
+                <button type="submit">Place your Order</button>
+            </form>
+            </div>
+        </div>
+        <div id="right">
+            <div id="right_sec">
+                <h4>Your order summary</h4>
+                <hr>
+                <div id="container">
+                </div>
+                <hr>
+                <div class="subtotal">
+                    <h5>Subtotal:</h5>
+                    <h4 id="subtotal">Price</h4>
+                </div>
+                <hr>
+                <div class="subtotal">
+                    <h5>Standard Ground Shipping:</h5>
+                    <h4>Free</h4>
+                </div>
+                <hr>
+                <div class="subtotal">
+                    <h3>Total</h3>
+                    <h4 id="total">Price</h4>
+                </div>
+                <hr>
+                <p>Shipping charges might vary based on delivery location</p>
+            </div>
+           <div id="right_sec2">
+            <h5>Ways you can pay:</h5>
+            <div id="card_img">
+               <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-visa.png" alt="">
+               <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-mc.png" alt="">
+               <img src="https://i1.lmsin.net/website_images/in/checkout/logo-rupay.svg" alt="">
+               <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-cash.png" alt="">
+               <img src="https://i1.lmsin.net/website_images/in/checkout/logo-netbanking.svg" alt="">
+               <img src="https://i1.lmsin.net/website_images/in/checkout/logo-wallet.svg" alt=""> 
+            </div>
+           </div>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <div class="popinput" id="popinput">
+        <input id="otpinput" type="password" maxlength="4" minlength="4" placeholder="Enter your OTP" required>
+        <br>
+        <button onclick="checkotp(event)">Submit</button>    
+    </div>
+    <div class="correct" id="popcorrect">
+        <img src="https://cdn-icons-png.flaticon.com/512/463/463574.png" alt="">
+        <h4>Your Order is Sucessful</h4>
+        <button onclick="logoclick(event)">OK</button>
+    </div>
+    <div class="wrong" id="popwrong">
+        <img src="https://cdn-icons-png.flaticon.com/512/399/399274.png" alt="">
+        <h4>Wrong otp</h4>
+        <button onclick="paying(event)">Try again</button>
+    </div>
+</body>
+<script src="payment.js"></script>
+</html>
