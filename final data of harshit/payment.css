@@ -1,0 +1,697 @@
+body
+{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    padding-left: 7.5%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+#navright
+{
+    margin-right: 218px;
+}
+#navright_flex
+{
+    display: flex;
+    justify-content: end;
+}
+#navright>p
+{
+    font-size: 10px;
+    margin-left: 10px;
+}
+#navright_flex>p
+{
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+#logo
+{
+    width: 100px;
+}
+
+.payment_type
+{
+    display: flex;
+    align-items: center;
+}
+#mid
+{
+    padding-top: 60px;
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,100%);
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+#right_sec
+{
+    margin-top: 10px;
+    text-align: left;
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    margin-bottom: 30px;
+}
+#right
+{
+
+    
+    position: fixed;
+    right: 7.5%;
+    width: 28%;
+   
+}
+h2
+{
+    font-weight: 500;
+}
+h3
+{
+    font-weight: 400;
+}
+h4
+{
+    font-weight: 300;
+    margin: 0%;
+}
+h5
+{
+    margin: 0%;
+    padding: 0%;
+    font-weight: 500;
+}
+form>input
+{
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 3px;
+}
+#form>input
+{
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 3px;
+}
+#form>h5
+{
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+#form
+{
+    margin-bottom: 50px;
+    display: none;
+}
+form>h5
+{
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+.mob_flex
+{
+    display: flex;
+}
+.mob_flex>input
+{
+    width: 54.5%;
+    padding: 10px;
+    border: none;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 3px
+}
+.mob_box
+{
+    padding: 10px;
+    background-color: rgb(238, 238, 238);
+}
+.landmarkdiv
+{
+    display: flex;
+    align-items: center;
+}
+.addressdiv
+{
+    margin-top: -20px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.address_flex
+{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    padding-right: 60px;
+}
+.address_flex>input
+{
+    margin-right: 20px;
+}
+.landmarkdiv>h5
+{
+    margin-right: ;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+.landmarkdiv>p
+{
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+::placeholder
+{
+    color: rgb(181, 181, 181);
+}
+p
+{
+    margin: 0%;
+    font-size: 12px;
+    font-weight: 300;
+    color: grey;
+}
+.s_methoddiv
+{
+    text-align: center;
+    width: 49%;
+    border: 1px solid rgb(209, 209, 209);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 3px;
+}
+.s_methoddiv:hover
+{
+    cursor: pointer;
+}
+#left
+{
+    width: 63%;
+}
+#s_method
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+button
+{
+    width: 250px;
+    padding: 20px;
+    border: none;
+    background-color: rgb(48 58 178);
+    color: white;
+    border-radius: 3px;
+}
+
+button:hover
+{
+    background-color:  rgb(80, 86, 159);
+    cursor: pointer;
+}
+
+#buttondiv
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#buttondiv>p
+{
+    font-size: 10px;
+}
+.payment_type
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.payment_type>i
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+hr
+{
+    margin-bottom: 15px;
+    /* border-color: rgb(214, 214, 214); */
+    size: 1px;
+    opacity: 30%;
+}
+
+#cardtype
+{
+    display: flex;
+    align-items: center;
+}
+
+.card_type
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+#carddetails>input
+{
+
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border: 1px solid rgb(209, 209, 209);
+    color: rgb(209, 209, 209);
+    border-radius: 3px
+}
+
+#carddetails
+{
+    margin-left: 30px;
+}
+
+#carddetails>h5
+{
+    margin-bottom: 10px;
+}
+
+#expirydiv
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+#cvvdiv
+{
+    margin-left: 60px;
+    display: flex;
+}
+
+#carddetails>#expiry
+{
+    width: 100px;
+    margin-right: 5px;
+}
+
+#carddetails>#cvv
+{
+    width: 100px;
+}
+#cvvdiv>h5
+{
+    margin-right: 10px;
+}
+
+.checkdiv
+{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.checkdiv>input
+{
+    margin-right: 20px;
+}
+#checkh5
+{
+    margin-top: 20px;
+}
+
+.image
+{
+    width: 60px;
+    margin-right: 20px;
+}
+.card
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.textbox
+{
+    text-align: left;
+    width: 100%;
+}
+
+.textbox>h5
+{
+    font-weight: 200;
+}
+.qdiv
+{
+    display: flex;
+    justify-content: space-between;
+}
+.subtotal
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#container
+{
+    margin-bottom: 15px;
+}
+
+#card_img
+{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#card_img>img
+{
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+#right_sec2
+{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.popinput
+{
+    text-align: center;
+    background-color: white;
+    padding: 60px 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(213, 213, 213);
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%,-50%)scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s ease-in-out;
+}
+
+.correct
+{
+    background-color: white;
+    width: 330px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    padding: 0px 30px;
+    border: 1px solid rgb(213, 213, 213);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%,-50%)scale(1);
+    display: none;
+}
+
+.wrong
+{
+    background-color: white;
+    width: 330px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    padding: 0px 30px;
+    border: 1px solid rgb(213, 213, 213);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%,-50%)scale(1);
+    display: none;
+}
+
+.wrong>img
+{
+    width: 100px;
+    margin-top: -50px;
+    margin-bottom: 30px;
+}
+
+.correct>img
+{
+    width: 100px;
+    margin-top: -50px;
+    margin-bottom: 30px;
+}
+
+.wrong>button
+{
+    margin-bottom: 40px;
+}
+
+.correct>button
+{
+    margin-bottom: 40px;
+}
+
+.wrong>h4
+{
+    margin: 40px;
+}
+
+.correct>h4
+{
+    margin: 40px;
+}
+
+.open-popinput
+{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%)scale(1);
+}
+
+.popinput>input
+{
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 180px;
+    border: none;
+    border: 1px solid rgb(209, 209, 209);
+    color: rgb(209, 209, 209);
+    border-radius: 3px
+}
+.popinput>button
+{
+    width: 200px;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+#overlay
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    background-color: black;
+    opacity: 50%;
+}
+
+#popinput>input::placeholder
+{
+    text-align: center;
+}
+
+@media all and (min-width:451px) and (max-width:750px)
+{
+    #mid
+{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+}
+
+#right
+{
+
+    
+    position:relative;
+    right:0;
+    width: 100%;
+   
+}
+
+#left
+{
+    width: 100%;
+}
+
+#navright
+{
+    margin-right: 85px;
+}
+#buttondiv
+{
+    background-color: white;
+    position: fixed;
+    bottom: 0%;
+    z-index: 11;
+}
+}
+
+
+
+@media all and (min-width:100px) and (max-width:450px)
+{
+    #mid
+{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+}
+
+#right
+{
+
+    
+    position:relative;
+    right:0;
+    width: 100%;
+   
+}
+
+#left
+{
+    width: 100%;
+}
+
+#navright
+{
+    margin-right: 45px;
+}
+#buttondiv
+{
+    background-color: white;
+    position: fixed;
+    bottom: 0%;
+    z-index: 11;
+}
+
+#navright>p
+{
+    font-size: 8px;
+}
+#navright_flex>p
+{
+    font-size: 8px;
+}
+h2
+{
+    font-size: 20px;
+}
+}
+
+.gmap_canvas 
+{   overflow:hidden;
+    background:none!important;
+    height:auto;
+    width:100%;
+}
+#mapdiv
+{
+    margin-top: -70px;
+}
+#location
+{
+    width: 150px;
+    padding: 10px;
+    border: 0ch;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 3px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#store
+{
+    display: none;
+    margin-bottom: 40px;
+}
+
+#selectedstore
+{
+    
+    position: relative;
+    top: 300px;
+    left: 200px;
+    z-index: 22;
+    width: 200px;
+    background-color: white;
+    height: 60px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+#selectedstore>p
+{
+    margin: 0%;
+}
+
+
+#selectedstore>h3
+{
+    margin: 0%;
+    margin-top: 10px;
+}
+
+#contactdetails
+{
+    display: none;
+    margin-bottom: 50px;
+}
+
+#contactdetails>input
+{
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+#contactdetails>h5
+{
+    margin-bottom: 10px;
+}
+#s_methoddiv1
+{
+    outline: 2px solid rgb(24, 24, 184);
+}
+
+#s_methoddiv2
+{
+    outline: 0px solid rgb(24, 24, 184);
+}
