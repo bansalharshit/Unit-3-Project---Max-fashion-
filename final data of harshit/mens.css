@@ -1,0 +1,105 @@
+*{
+    font-family: 'ProximaNova-Bold',"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
+.all{
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+h2{
+    font-size: 32px;
+    font-family: 'ProximaNova-Regular',"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-weight: normal;
+}
+.discount{
+    /* margin-top: 100px; */
+    width: 100%;
+    height: 30px;
+    color: white;
+    background-color: blue;
+    text-align: center;
+    font-size: 16px;
+}
+.discount > p{
+    margin-top: 10px;
+}
+#slideShow{
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+}
+#slideShow img{
+    width: 100%;
+    height: 100%;
+}
+.freeShipping{
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.freeShipping img{
+    width: 100%;
+}
+.BudgetBuy,.theJoy{
+    margin-bottom: 80px;
+}
+.BudgetBuy img{
+    width: 100%;
+}
+.theJoy img{
+    width: 100%;
+}
+.shopbtcatgrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 0px 15px;
+}
+.shopbtcatgrid img{
+    width: 100%;
+}
+.trending,.monsoon,.youth,.summer{
+    margin-bottom: 80px;
+}
+.trendinggrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+}
+.trendinggrid img{
+    width: 100%;
+}
+.monsoon img{
+    width: 100%;
+}
+.youth img{
+    width: 100%;
+}
+.gifting{
+    margin-bottom: 80px;
+}
+.gifting > img{
+    width: 100%;
+}
+@media all and (min-width:200px) and (max-width:700px){
+    .shopbtcatgrid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        gap: 0px 15px;
+    }
+    .trendinggrid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .discount p{
+        font-size: 13px;
+    }
+    
+}

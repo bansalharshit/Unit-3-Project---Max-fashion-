@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mensproduct1.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="https://kit.fontawesome.com/83f65eabc3.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header id="header"></header>
+    <div class="all">
+        <div><h1>You searched for “”</h1>
+        </div>
+        <div class="shopfor"><div> <p> Shop For</p></div>
+            <button><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/1maxmen-tops-tshirts.jpg" alt="">
+            <p>Tops</p></button>
+            <button><p>Young</p></button>
+            <button><img src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX_SubCatImg/1maxshoesandaccessories-accessories-men-backpacks.jpg" alt="">
+            <p>Accessories</p> </button>
+        </div>
+        <div class="sort" >
+            <div>
+            <select onchange="pricesort()" name="" id="price"> 
+                <option value="">Price</option>
+                <option value="lh">Low To High</option>
+                <option value="hl">High To Low</option>
+            </select>
+        </div>
+        <div>
+            <select name="" id="">
+                <option value="">Browse</option>
+            </select>
+        </div>
+        <div>
+            <select name="" id="size" onchange="sizesorting()">
+                <option value="">Size</option>
+                <option value="40">40</option>
+                <option value="44">44</option>
+                <option value="48">48</option>
+            </select>
+        </div>
+        <div>
+            <select name="" id="">
+                <option value="">Color Family</option>
+            </select>
+        </div>
+        <div>
+            <select name="" id="type" onchange="typesort()">
+                <option value="">Type</option>
+                <option value="shirt">Shirt</option>
+                <option value="tshirt">T-shirt</option>
+            </select>
+        </div>
+        </div>
+        <div class="prosor">
+            <div><p></p>
+            </div>
+            <div> 
+            <div> Sort by 
+                <select name="" id="rel" onchange="pricesortt()">
+                    <option value="">Relevance</option>
+                    <option value="lh">Low To High</option>
+                    <option value="hl">High To Low</option>
+                </select>
+            </div>
+            </div>
+        </div>
+        <div id="container"></div>
+    </div>
+</body>
+</html>
+<script type="module" src="mensproduct1.js"></script>
+<script src="menprofun.js"></script>
