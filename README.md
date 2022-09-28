@@ -18,18 +18,22 @@ Netlify link:- https://hilarious-klepon-f7ca3b.netlify.app/.
 
 - <b>HOME PAGE</b>
 
-![1](https://user-images.githubusercontent.com/31159055/189099388-8758ee43-549c-4f2f-a2cf-05bc40dcd623.PNG)
+![1](https://i.postimg.cc/m2LyXz8s/Max-Fashion-Home1.png)
 
-![2](https://user-images.githubusercontent.com/31159055/189099633-470d9f42-11cc-4dad-b949-d48c477ec79c.png)
+![2](https://i.postimg.cc/9McDmT4X/Max-Fashion-Home2.png)
 
-- <b>OUR STORY</b>
+- <b>WOMENS PAGE</b>
 
-![3](https://user-images.githubusercontent.com/31159055/189099655-bae689b6-a00b-4331-8d89-e5424eaf3393.png)
+![3](https://i.postimg.cc/NFHqZCgK/Womens1.png)
 
-- <b> PRODUCT PAGE</b>
+- <b>WOMENS PRODUCT PAGE</b>
 
-<img src="https://user-images.githubusercontent.com/31159055/189099702-77044ba7-cb35-448c-a26a-5f9b993a3c5b.png" height="500px" width="450px">
+![4](https://i.postimg.cc/HkhGsCVr/Womens2.png)
+
+- <b>MENS PAGE</b>
+
+![5](https://i.postimg.cc/8CQHbyYy/Mens.png)
 
 ## Feedback
 
-If you have any feedback, please reach out to us at pardeshiharshal90@gmail.com.
+If you have any feedback, please reach out to us at abhaytalkin@gmail.com.
