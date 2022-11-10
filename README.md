@@ -6,8 +6,8 @@ Netlify link:- https://hilarious-klepon-f7ca3b.netlify.app/.
 
 ## Features
 
-- Homepage with Same UI:- Harshit Bansal.
-- Signup,login and Payment Page:- Aswaljith.
+- Homepage,Signup and login page with Same UI:- Harshit Bansal.
+- Payment and address Page:- Aswaljith.
 - Cart page with adding and removing items:- Rekha Yadav.
 - Women's Page and Women's Product page with sorting,filtering feature:- Abhay Agrawal.
 - Men's Page and Men's Product page with sorting,filtering feature:- Ashirwad Kumar.
